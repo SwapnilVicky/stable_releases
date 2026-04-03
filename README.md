@@ -89,13 +89,13 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl \
 **Repo initialization:**
 
 ```bash
-repo init -u https://github.com/BlissRoms/stable_releases.git -b waterlily --git-lfs
+repo init -u https://github.com/SwapnilVicky/stable_releases.git -b waterlily --git-lfs
 ```
 
 **Sync repo:**
 
 ```bash
-repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc) --optimized-fetch --prune
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 ---
